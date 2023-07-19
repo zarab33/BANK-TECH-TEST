@@ -1,8 +1,7 @@
 # Bank-tech-test
 
-<video src="bank TECH TEST.mp4" controls>
-  Your browser does not support the video tag.
-</video>
+![Logo Video](bank TECH TEST.mp4)
+
 
 
 
