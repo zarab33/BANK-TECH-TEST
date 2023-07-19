@@ -1,4 +1,4 @@
-# {{PROBLEM}} Multi-Class Planned Design Recipe
+# Bank Tech Test Multi-Class Planned Design Recipe
 
 ## 1. Describe the Problem
 
@@ -33,7 +33,7 @@ uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
             │ - deposit(amount, date)        │
             │                                │ ───────────┐
             │                                │            │
-            │ -Withdra(amount, date)         │            │
+            │ -Withdraw(amount, date)        │            │
             │                                │            │
             │                                │            │
             │ -getStatement                  │            │
@@ -47,7 +47,7 @@ uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
             │                                  │          │
             │                                  │          │
             │                                  │ ◄────────┘
-┌────────── │  -toString                       │
+┌────────── │  -formatTransaction              │
 │           │                                  │
 │           │                                  │
 │           │                                  │
@@ -89,7 +89,7 @@ class Account {
 
   getStatement() {
     const statement = new Statement(this.transactions);
-    return statement.generateStatement();
+    return statement.printStatement();
   }
 }
 
@@ -110,7 +110,7 @@ class Statement {
     this.transactions = transactions;
   }
 
-  generateStatement() {
+  printStatement() {
     let statement = 'date || credit || debit || balance\n';
     let balance = 0;
 
