@@ -18,14 +18,20 @@ describe('Account', () => {
     expect(account.balance).toEqual(500);
   });
 
-  xit("should return the account statement", () => {
-    const expectedStatement = `date || credit || debit || balance
-  14/01/2023 || || 500.00 || 2500.00
-  13/01/2023 || 2000.00 || || 3000.00
-  10/01/2023 || 1000.00 || || 1000.00`;
+  it("should return the account statement", () => {
+  const expectedStatement = `date || credit || debit || balance
+14/01/2023 || || 500.00 || 2500.00
+13/01/2023 || 2000.00 || || 3000.00
+10/01/2023 || 1000.00 || || 1000.00`;
 
-    const statement = account.printStatement(); // Define the 'statement' variable
+  const account = new Account();
+  account.deposit(1000, new Date('2023-01-10'));
+  account.deposit(2000, new Date('2023-01-13'));
+  account.withdraw(500, new Date('2023-01-14'));
 
-    expect(statement).toMatch(expectedStatement);
-  });
+  const statement = account.getStatement();
+
+  expect(statement).toEqual(expectedStatement);
+});
+
 });
