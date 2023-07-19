@@ -1,7 +1,7 @@
 <h1 align="center"> BANK TECH TEST </h1> <br>
 <p align="center">
   <a href="#">
-    <img alt="BANK-TECH-TEST" title="BankTechTest" src="bank-tech-test-logo.jpg" width="450">
+    <img alt="BANK-TECH-TEST" title="BankTechTest" src="bank-tech-test-logo.jpg" width="600">
   </a>
 </p>
 
