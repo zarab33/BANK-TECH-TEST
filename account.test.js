@@ -12,7 +12,7 @@ describe('Account', () => {
     expect(account.balance).toEqual(1000);
   });
 
-  xit('should withdraw money from the account', () => {
+  it('should withdraw money from the account', () => {
     account.deposit(1000, '10-01-2023');
     account.withdraw(500, '11-01-2023');
     expect(account.balance).toEqual(500);
