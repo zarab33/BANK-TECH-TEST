@@ -1,10 +1,11 @@
+<h1 align="center"> BANK TECH TEST </h1> <br>
+<p align="center">
+  <a href="#">
+    <img alt="BANK-TECH-TEST" title="BankTechTest" src="bank-tech-test-logo.jpg" width="450">
+  </a>
+</p>
+
 # Bank-tech-test
-
-![Example Image](Copy of bank TECH TEST.jpg)
-
-
-
-
 
 A simple bank statement system implemented in [JavaScript] that allows users to track their finances, make deposits and withdrawals, and generate account statements.
 
