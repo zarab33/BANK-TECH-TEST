@@ -14,10 +14,17 @@ describe('Transaction', () => {
     expect(transaction.balance).toEqual(0);
   });
 
-  it('should return the correct string representation', () => {
-    const transaction = new Transaction(date, amount, type);
+  it('should return the correct string representation for deposit', () => {
+    const transaction = new Transaction(date, amount, 'deposit');
 
     const expectedString = `${date} || 1000.00 || || 0.00`;
+    expect(transaction.toString()).toEqual(expectedString);
+  });
+
+  it('should return the correct string representation for withdrawal', () => {
+    const transaction = new Transaction(date, amount, 'withdrawal');
+
+    const expectedString = `${date} ||  || 1000.00|| 0.00`;
     expect(transaction.toString()).toEqual(expectedString);
   });
 
