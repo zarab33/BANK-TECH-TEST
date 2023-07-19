@@ -1,6 +1,7 @@
 # Bank-tech-test
 
-![Logo Video](bank TECH TEST.mp4)
+![Example Image](Copy of bank TECH TEST.jpg)
+
 
 
 
