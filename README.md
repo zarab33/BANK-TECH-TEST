@@ -1,5 +1,7 @@
 # Bank-tech-test
 
+![Logo Video](/Users/Zara/Projects/BANK-TECH-TEST/bank-test-logo.mp4)
+
 
 A simple bank statement system implemented in [JavaScript] that allows users to track their finances, make deposits and withdrawals, and generate account statements.
 

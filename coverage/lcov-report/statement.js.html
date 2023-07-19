@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>23/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>22/22</span>
             </div>
         
             
@@ -109,43 +109,49 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -167,32 +173,35 @@
     return `${day}/${month}/${year}`;
   }
 &nbsp;
-  printStatement() {
-    let statement = '';
-    let balance = 0;
+ printStatement() {
+  let statement = '';
+  let balance = 0;
 &nbsp;
-    // Sort transactions by date in ascending order
-    const sortedTransactions = this.transactions.sort((a, b) =&gt; new Date(a.date) - new Date(b.date));
+  // Sort transactions by date in ascending order
+  const sortedTransactions = this.transactions.sort((a, b) =&gt; new Date(a.date) - new Date(b.date));
 &nbsp;
-    for (const transaction of sortedTransactions) {
-      const { date, amount, type } = transaction;
-      const formattedDate = this.formatDate(date);
+  for (const transaction of sortedTransactions) {
+    const { date, amount, type } = transaction;
+    const formattedDate = this.formatDate(date);
 &nbsp;
-      if (type === 'deposit') {
-        balance += amount;
-        statement += `${formattedDate} || ${amount.toFixed(2)} || || ${balance.toFixed(2)}\n`;
-      } else <span class="missing-if-branch" title="else path not taken" >E</span>if (type === 'withdrawal') {
-        balance -= amount;
-        statement += `${formattedDate} || || ${amount.toFixed(2)} || ${balance.toFixed(2)}\n`;
-      }
+    if (type === 'deposit') {
+      balance += amount;
+      statement += `${formattedDate} || ${amount.toFixed(2)} || || ${balance.toFixed(2)}\n`;
+    } else if (type === 'withdrawal') {
+      balance -= amount;
+      statement += `${formattedDate} || || ${amount.toFixed(2)} || ${balance.toFixed(2)}\n`;
+    } else {
+      statement += `${formattedDate} || ${type} || || ${balance.toFixed(2)}\n`;
     }
-&nbsp;
-    // Reverse the statement to get the desired output order
-    const reversedStatement = statement.trim().split('\n').reverse().join('\n');
-    const finalStatement = `date || credit || debit || balance\n${reversedStatement}`;
-    // Create the final statement with the header line
-    return finalStatement.trim();
   }
+&nbsp;
+  // Reverse the statement to get the desired output order
+  const reversedStatement = statement.trim().split('\n').reverse().join('\n');
+  const finalStatement = `date || credit || debit || balance\n${reversedStatement}`;
+  // Create the final statement with the header line
+  return finalStatement.trim();
+}
+&nbsp;
 }
 &nbsp;
 module.exports = Statement;
@@ -208,7 +217,7 @@ module.exports = Statement;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-07-19T12:16:20.305Z
+                at 2023-07-19T14:40:19.469Z
             </div>
         <script src="prettify.js"></script>
         <script>
