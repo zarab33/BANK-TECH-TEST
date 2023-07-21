@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1689777619475" clover="3.2.0">
-  <project timestamp="1689777619475" name="All files">
+<coverage generated="1689940444645" clover="3.2.0">
+  <project timestamp="1689940444645" name="All files">
     <metrics statements="44" coveredstatements="44" conditionals="8" coveredconditionals="8" methods="13" coveredmethods="13" elements="65" coveredelements="65" complexity="0" loc="44" ncloc="44" packages="1" files="3" classes="3"/>
-    <file name="account.js" path="/Users/Zara/Projects/BANK-TECH-TEST/account.js">
+    <file name="account.js" path="/Users/Zara/Projects/BANK-TECH-TEST/lib/account.js">
       <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
@@ -18,7 +18,7 @@
       <line num="24" count="1" type="stmt"/>
       <line num="28" count="1" type="stmt"/>
     </file>
-    <file name="statement.js" path="/Users/Zara/Projects/BANK-TECH-TEST/statement.js">
+    <file name="statement.js" path="/Users/Zara/Projects/BANK-TECH-TEST/lib/statement.js">
       <metrics statements="22" coveredstatements="22" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
       <line num="3" count="5" type="stmt"/>
       <line num="7" count="11" type="stmt"/>
@@ -43,7 +43,7 @@
       <line num="39" count="5" type="stmt"/>
       <line num="44" count="2" type="stmt"/>
     </file>
-    <file name="transaction.js" path="/Users/Zara/Projects/BANK-TECH-TEST/transaction.js">
+    <file name="transaction.js" path="/Users/Zara/Projects/BANK-TECH-TEST/lib/transaction.js">
       <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
       <line num="3" count="12" type="stmt"/>
       <line num="4" count="12" type="stmt"/>

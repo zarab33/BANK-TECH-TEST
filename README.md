@@ -1,5 +1,5 @@
   <a href="#">
-    <img alt="BANK-TECH-TEST" title="BankTechTest" src="bank-tech-test-logo.jpg" style="width: 100%;">
+    <img alt="BANK-TECH-TEST" title="BankTechTest" src="media/bank-tech-test-logo.jpg" style="width: 100%;">
   </a>
 </p>
 
@@ -52,7 +52,7 @@ node testStatement.js
 When the application is running, you can interact with it through the command-line interface (CLI) to make deposits, withdrawals, and generate account statements.
 
 <a href="#">
-    <img alt="screen shot" title="output" src="Screenshot 2023-07-19 at 21.21.35.png" style="width: 100%;">
+    <img alt="screen shot" title="output" src="media/Screenshot 2023-07-19 at 21.21.35.png" style="width: 100%;">
   </a>
 </p>
 

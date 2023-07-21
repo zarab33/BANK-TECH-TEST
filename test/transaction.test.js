@@ -1,4 +1,4 @@
-const Transaction = require('./transaction');
+const Transaction = require('../lib/transaction');
 
 describe('Transaction', () => {
   const date = new Date('2023-01-10');
